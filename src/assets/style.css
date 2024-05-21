@@ -13,9 +13,9 @@
 
 
   .header{
-    @apply  text-2xl lg:text-[2.5rem] lg:leading-[56px] text-[#381903] text-center font-semibold
+    @apply  text-[1.5625rem] md:text-[2.5rem] xs:text-[1.3rem] md:leading-[56px] text-[#381903] text-center font-semibold
   }
 
   .sub-header{
-    @apply font-body font-normal text-xs text-center lg:text-[18px]  text-[#998C83] leading-5 lg:leading-[29px]
+    @apply font-body font-normal text-xs text-center md:text-[18px]  text-[#998C83] leading-5 md:leading-[29px]
   }

@@ -9,13 +9,13 @@ import Button from './button.vue';
         <img class="w-10 mb-3 -rotate-12" src="/wond.png" alt="">
         <h1 class="header mb-[15px] lg:w-[600px]">Upload your books & articles
             and let <span class="text-[#FF6128]">AI</span> do the rest.</h1>
-        <div class="flex flex-col relative h-[20.6rem] lg:h-[26rem]">
+        <div class="flex flex-col relative h-[20.6rem] lg:h-[26rem] md:h-[30rem]">
             <p class="sub-header w-[87%] self-center lg:w-[522px]">Provide summaries of diverse materials, including textbooks, novels, and PDFs. Ideal
                 for
                 students, professionals, or anyone seeking to make reading more efficient and enjoyable!</p>
             <div class="flex flex-col absolute top-[1rem]">
-                <img class="self-center w-full" src="/spotlight.png" alt="">
-                <img class="absolute bottom-0 self-center translate-x-1 w-[234px] lg:w-[350px]" src="/book.png" alt="">
+                <img class="self-center w-full md:w-[70%]" src="/spotlight.png" alt="">
+                <img class="absolute bottom-0 self-center md:w-[40%] translate-x-1 w-[234px] lg:w-[350px]" src="/book.png" alt="">
             </div>
         </div>
         <Button class="mt-[2.5rem]">
@@ -24,10 +24,3 @@ import Button from './button.vue';
     </section>
 
 </template>
-
-
-<style>
-.border {
-    /* border: 1px solid red; */
-}
-</style>
