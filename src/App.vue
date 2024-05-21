@@ -1,10 +1,13 @@
 <script setup>
-
+import Footer from './components/footer.vue';
+import hero from './components/hero.vue';
+import usecases from "./components/usecases.vue";
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">hi</h1>
+  <div class="max-w-[1500px] mx-auto">
+    <hero></hero>
+    <usecases></usecases>
+    <Footer></Footer>
+  </div>
 </template>
-
-
-
