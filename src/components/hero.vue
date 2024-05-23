@@ -8,14 +8,14 @@ function scrollToEndOfPage() {
 }
 </script>
 <template>
-    <section class="pt-[5rem] pb-4 lg:pb-[5rem] flex flex-col items-center bg-hero-pattern px-[2rem]">
+    <section class="pt-[5rem] pb-4 lg:pb-[5rem] flex flex-col items-center relative bg-hero-pattern px-[2rem]">
         <img src="/Star.png"
-            class="absolute left-[1rem] md:left-[2.5rem] lg:bottom-[45vh] lg:w-[60px] lg:left-[10vh] bottom-[55vh] animate-spin" alt="">
+            class="absolute left-[1rem] md:left-[2.5rem] lg:bottom-[60vh] lg:w-[60px] lg:left-[10vh] bottom-[55vh] animate-spin" alt="">
         <img src="/Star.png"
-            class="absolute right-[2rem] md:right-[3rem] bottom-[25vh] w-[20px] lg:w-[31px] lg:bottom-[10vh] lg:right-[15vh] animate-spin"
+            class="absolute right-[2rem] md:right-[3rem] bottom-[25vh] w-[20px] lg:w-[31px] lg:bottom-[30vh] lg:right-[15vh] animate-spin"
             alt="">
         <img src="/Star.png"
-            class="absolute right-[2rem] bottom-[25vh] md:top-[40vh] md:right-[10vw] w-[20px] lg:w-[31px] lg:top-[40vh] lg:right-[35vh] animate-spin"
+            class="absolute right-[2rem] bottom-[25vh] md:top-[40vh] md:right-[10vw] w-[20px] lg:w-[31px] lg:top-[30vh] lg:right-[35vh] animate-spin"
             alt="">
         <img class="w-10 mb-3 -rotate-12" src="/wond.png" alt="">
         <h1 class="header mb-[15px] lg:w-[600px]">Upload your books & articles

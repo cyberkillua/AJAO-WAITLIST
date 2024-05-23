@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-hero-pattern pb-[9rem] lg:h-fit px-[1.5rem] xs:px-[1rem] pt-[4rem] md:flex flex-col">
+    <footer class="bg-hero-pattern pb-[7rem] lg:h-fit px-[1.5rem] xs:px-[1rem] pt-[4rem] md:flex flex-col">
         <h1 class="header lg:w-[600px] self-center">Don’t Miss out on our launch dates <span
                 class="text-[#FF6128]">&</span> other updates</h1>
 
