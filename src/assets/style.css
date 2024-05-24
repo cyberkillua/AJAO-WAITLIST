@@ -15,7 +15,7 @@
 
 
 .header {
-  @apply text-[1.5625rem] md:text-[2.5rem]  xs:text-[1.3rem] md:leading-[56px] text-[#381903] text-center lg:font-semibold
+  @apply text-[1.5625rem] md:text-[2.5rem]  xs:text-[1.3rem] md:leading-[50px] text-[#381903] text-center lg:font-semibold
 }
 
 .sub-header {
