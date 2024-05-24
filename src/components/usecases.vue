@@ -23,7 +23,7 @@ const usecases = [
 <template>
     <section class="mt-[4rem] px-[2rem] pb-[1rem] lg:px-[100px] bg-white">
         <h1
-            class="mb-[20px] lg:mb-[5rem] md:mb-[2rem] capitalize  font-semibold text-center text-[1.375rem] lg:text-[2.19rem] text-[#381903]">
+            class="mb-[20px] lg:mb-[5rem] md:mb-[2rem] capitalize font-semibold text-center text-[1.375rem] lg:text-[2.19rem] text-[#381903]">
             Use Cases</h1>
         <div class="max-w-[1200px] mx-auto">
             <usecase :usecases="usecases"></usecase>
