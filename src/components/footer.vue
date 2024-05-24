@@ -6,13 +6,12 @@
         <div class=" md:w-[493px] md:self-center">
             <div class="flex mt-[3rem] justify-between items-center">
                 <input type="text" v-model="email" placeholder="Your Email Address"
-                    class="h-[50px] w-[60%] focus:outline-0 md:w-[70%] border border-[#998C834D] rounded-[1.8rem] indent-3 placeholder:font-body placeholder:font-light lg:placeholder:text-[14px] placeholder:text-[12px] placeholder:text-[#998C83]">
+                    class="h-[50px] w-[60%] focus:outline-0 md:w-[70%] border border-[#998C834D] rounded-[1.8rem] indent-3 placeholder:font-body placeholder:font-thin lg:placeholder:text-[14px] placeholder:text-[12px] placeholder:text-[#998C83]">
                 <button @click="joinWaitlist"
                     class="bg-custom-gradient py-[.8rem] text-[14px] font-body capitalize px-[1.5rem] rounded-[1.8rem] text-white disabled:opacity-50 disabled:cursor-not-allowed"
-                    :disabled="!testEmail">{{ loading ? "loading...." : "Join Waitlist" }}</button>
+                    :disabled="!testEmail || loading">{{ loading ? "loading...." : "Join Waitlist" }}</button>
             </div>
-            <p v-if="!testEmail && email !== ''" class="text-[red] self-center ml-5 capitalize font-mono text-[.8rem]">
-                pls enter a valid email</p>
+            <p v-if="!testEmail && email !== ''" class="text-[red] self-center mt-1 ml-3 font-sans text-[.7rem] md:text-[.8rem]">Please provide a valid email address.</p>
         </div>
 
     </footer>
@@ -78,10 +77,11 @@ watch(email, (newValue) => {
 .Toastify__toast-container {
     @media screen and (max-width: 800px) {
         width: 58vw;
+        right: 0;
     }
 }
 .Toastify__toast {
     text-transform: capitalize;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
 }
 </style>

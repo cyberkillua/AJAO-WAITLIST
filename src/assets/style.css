@@ -4,18 +4,25 @@
 
 /* geist-sans-latin-400-normal */
 @font-face {
-    font-family: 'Geist Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 300;
-    src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff) format('woff');
-  }
+  font-family: 'Geist Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff) format('woff');
+}
 
 
-  .header{
-    @apply  text-[1.5625rem] md:text-[2.5rem] xs:text-[1.3rem] md:leading-[56px] text-[#381903] text-center font-semibold
-  }
 
-  .sub-header{
-    @apply font-body font-normal text-xs text-center md:text-[18px]  text-[#998C83] leading-5 md:leading-[29px]
-  }
+
+.header {
+  @apply text-[1.5625rem] md:text-[2.5rem]  xs:text-[1.3rem] md:leading-[56px] text-[#381903] text-center font-semibold
+}
+
+.sub-header {
+  @apply font-body font-normal text-[.8rem] text-center md:text-[18px] text-[#998C83] leading-5 md:leading-[29px];
+}
+
+body{
+  background-image: url('/different-patterns.png');
+  font-family: 'Geist Sans';
+}
