@@ -11,7 +11,9 @@
                     class="bg-custom-gradient py-[.8rem] text-[14px] font-body capitalize px-[1.5rem] rounded-[1.8rem] text-white disabled:opacity-50 disabled:cursor-not-allowed"
                     :disabled="!testEmail || loading">{{ loading ? "loading...." : "Join Waitlist" }}</button>
             </div>
-            <p v-if="!testEmail && email !== ''" class="text-[red] self-center mt-1 ml-3 font-sans text-[.7rem] md:text-[.8rem]">Please provide a valid email address.</p>
+            <p v-if="!testEmail && email !== ''"
+                class="text-[red] self-center mt-1 ml-3 font-sans text-[.7rem] md:text-[.8rem]">Please provide a valid
+                email address.</p>
         </div>
 
     </footer>
@@ -45,7 +47,6 @@ const joinWaitlist = async () => {
             toast.success(json.message, {
                 autoClose: 1000,
                 hideProgressBar: true,
-                position: toast.POSITION.TOP_RIGHT,
                 transition: toast.TRANSITIONS.SLIDE,
             });
 
@@ -77,9 +78,12 @@ watch(email, (newValue) => {
 .Toastify__toast-container {
     @media screen and (max-width: 800px) {
         width: 58vw;
-        right: 0;
+        left: auto;
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
 }
+
 .Toastify__toast {
     text-transform: capitalize;
     font-family: sans-serif;
