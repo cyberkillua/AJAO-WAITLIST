@@ -23,11 +23,11 @@
 import { ref, watch } from 'vue';
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
-
 const email = ref("");
 const testEmail = ref(false)
 const loading = ref(false)
 const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
 const joinWaitlist = async () => {
     try {
         loading.value = true
@@ -45,7 +45,7 @@ const joinWaitlist = async () => {
             email.value = "";
             loading.value = false
             toast.success(json.message, {
-                autoClose: 1000,
+                autoClose: 2000,
                 hideProgressBar: true,
                 transition: toast.TRANSITIONS.SLIDE,
             });
@@ -53,16 +53,16 @@ const joinWaitlist = async () => {
         } else {
             loading.value = false
             toast.error(json.error, {
-                autoClose: 1000,
+                autoClose: 2000,
                 hideProgressBar: true
 
             });
-            console.log(json.error)
         }
+
     } catch (error) {
         loading.value = false
         toast(error, {
-            autoClose: 1000,
+            autoClose: 2000,
             hideProgressBar: true
         });
     }
@@ -73,11 +73,10 @@ watch(email, (newValue) => {
 })
 </script>
 
-
 <style>
 .Toastify__toast-container {
     @media screen and (max-width: 800px) {
-        width: 58vw;
+        width: 60vw;
         left: auto;
         margin-top: 1rem;
         margin-left: 1rem;
@@ -87,5 +86,9 @@ watch(email, (newValue) => {
 .Toastify__toast {
     text-transform: capitalize;
     font-family: sans-serif;
+    font-size: .8rem;
+    @media screen and (max-width: 800px) {
+        font-size: .7rem;
+    }    
 }
 </style>
