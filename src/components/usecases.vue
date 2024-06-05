@@ -5,17 +5,17 @@ const usecases = [
     {
         title: "Upload a PDF document to receive a summary.",
         paragraph: "Our system will analyse the content of the document and provide you with a comprehensive summary. This summary will highlight the key points and ideas in the document, giving you a clear overview without having to read through the entire document.",
-        image: "/pdf.png"
+        image: "/first.png"
     },
     {
         title: "Provide the name and author of a book to receive a summary.",
         paragraph: "Provide the name and author of a book and Ajao will provide you a concise summary with key points such as the the main theme, key ideas and arguments of the book.",
-        image: "/author.png"
+        image: "/second.png"
     },
     {
         title: "Upload an audio file to receive a summary.",
         paragraph: "You can easily get a short summary of whatever audio file you provide Ajao.",
-        image: "/audio.png "
+        image: "/third.png "
     },
 ]
 </script>

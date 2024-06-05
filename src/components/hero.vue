@@ -1,57 +1,48 @@
 <script setup>
 import Button from './button.vue';
+import Ajao from "../AjaoAI.json";
+import { LottieAnimation } from "lottie-web-vue"
+
 function scrollToEndOfPage() {
     window.scrollTo({
         top: document.documentElement.scrollHeight,
         behavior: 'smooth'
     });
 }
+
 </script>
 <template>
-    <section class="pt-[5rem] pb-4 lg:pb-[5rem] flex flex-col items-center relative bg-hero-pattern px-[2rem]">
+    <section class="pt-[5rem] flex flex-col items-center relative bg-hero-pattern px-[2rem]">
         <img src="/Star.png"
-            class="absolute left-[1rem] md:left-[2.5rem] lg:bottom-[60vh] lg:w-[60px] lg:left-[10vh] bottom-[55vh] animate-spin" alt="">
-        <img src="/Star.png"
-            class="absolute right-[2rem] md:right-[3rem] bottom-[25vh] w-[20px] lg:w-[31px] lg:bottom-[30vh] lg:right-[15vh] animate-spin"
+            class="absolute left-[1rem] md:left-[2.5rem] lg:bottom-[60vh] md:bottom-[40vh] lg:w-[60px] lg:left-[10vh] bottom-[55vh] animate-spin"
             alt="">
         <img src="/Star.png"
-            class="absolute right-[2rem] bottom-[25vh] md:top-[40vh] md:right-[10vw] w-[20px] lg:w-[31px] lg:top-[30vh] lg:right-[35vh] animate-spin"
+            class="absolute right-[2rem] md:right-[3rem] bottom-[25vh] md:bottom-[50vh] w-[20px] lg:w-[31px] lg:bottom-[30vh] lg:right-[15vh] animate-spin"
             alt="">
-        <img class="w-10 mb-3 -rotate-12 wond" src="/wond.png" alt="">
-        <h1 class="header mb-[15px] lg:w-[600px]">Upload your books & articles
-            and let <span class="text-[#FF6128]">AI</span> do the rest.</h1>
-        <div class="flex flex-col relative h-[20.6rem] lg:h-[26rem] md:h-[30rem]">
+        <img src="/Star.png"
+            class="absolute right-[2rem] bottom-[25vh] md:top-[55vh] md:right-[10vw] w-[20px] lg:w-[31px] lg:top-[30vh] lg:right-[35vh] animate-spin"
+            alt="">
+        <h1 class="header mb-[15px] lg:w-[600px] lg:mt-[5rem] mt-[3rem]">Upload your books & articles
+            and let <span class="text-[#FF6128]">AI</span> do the rest
+            .
+        </h1>
+        <div class="flex flex-col h-[14rem] lg:h-[26rem] md:h-[33rem]">
             <p class="sub-header w-[87%] self-center lg:w-[522px]">Provide summaries of diverse materials, including
                 textbooks, novels, and PDFs. Ideal
                 for
-                students, professionals, or anyone seeking to make reading more efficient and enjoyable!</p>
-            <div class="flex flex-col absolute top-[1rem]">
-                <img class="self-center w-full md:w-[70%] lg:w-[100%]" src="/spotlight.png" alt="">
-                <img class="absolute bottom-0 self-center md:w-[40%] translate-x-1 w-[234px] lg:w-[350px]"
-                    src="/book.png" alt="">
+                students, professionals, or anyone seeking to make reading more efficient and enjoyable!
+            </p>
+            <div class="absolute self-center lg:top-[4rem] top-[0]">
+                <LottieAnimation class="w-[100vw] lg:h-[100vh] h-[70vh]" :animation-data="Ajao" :auto-play="true"
+                    :loop="true" />
             </div>
         </div>
-        <Button class="mt-[2.5rem]" @click="scrollToEndOfPage">
+        <Button class="lg:mt-5" @click="scrollToEndOfPage">
             Join Waitlist
         </Button>
     </section>
 </template>
 
 <style scoped>
-.wond {
-    transform-origin: top right;
-    animation: wiggle 2s infinite;
-}
 
-@keyframes wiggle {
-    0% {
-        transform: rotate(-20deg);
-    }
-    50% {
-        transform: rotate(20deg);
-    }
-    100% {
-        transform: rotate(-20deg);
-    }
-}
 </style>
