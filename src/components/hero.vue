@@ -14,7 +14,7 @@ function scrollToEndOfPage() {
 <template>
     <section class="pt-[5rem] flex flex-col items-center relative bg-hero-pattern px-[2rem]">
         <img src="/Star.png"
-            class="absolute left-[1rem] md:left-[2.5rem] lg:bottom-[60vh] md:bottom-[40vh] lg:w-[60px] lg:left-[10vh] bottom-[55vh] animate-spin"
+            class="absolute left-[6vw] md:left-[2.5rem] lg:bottom-[60vh] md:bottom-[40vh] lg:w-[60px] lg:left-[10vh] bottom-[45vh] animate-spin"
             alt="">
         <img src="/Star.png"
             class="absolute right-[2rem] md:right-[3rem] bottom-[25vh] md:bottom-[50vh] w-[20px] lg:w-[31px] lg:bottom-[30vh] lg:right-[15vh] animate-spin"
