@@ -14,14 +14,14 @@ function scrollToEndOfPage() {
 <template>
     <section class="pt-[5rem] flex flex-col items-center relative bg-hero-pattern px-[2rem]">
         <img src="/Star.png"
-            class="absolute left-[6vw] md:left-[2.5rem] lg:bottom-[60vh] md:bottom-[40vh] lg:w-[60px] lg:left-[10vh] bottom-[45vh] animate-spin"
-            alt="">
+            class="absolute left-[6vw] md:left-[2.5rem] lg:bottom-[60dvh] md:bottom-[40vh] lg:w-[60px] lg:left-[10vh] bottom-[45vh] animate-spin"
+            alt="start image">
         <img src="/Star.png"
-            class="absolute right-[2rem] md:right-[3rem] bottom-[25vh] md:bottom-[50vh] w-[20px] lg:w-[31px] lg:bottom-[30vh] lg:right-[15vh] animate-spin"
-            alt="">
+            class="absolute right-[2rem] md:right-[3rem] bottom-[25dvh] md:bottom-[50vh] w-[20px] lg:w-[31px] lg:bottom-[30vh] lg:right-[15vh] animate-spin"
+            alt="star image">
         <img src="/Star.png"
-            class="absolute right-[2rem] bottom-[25vh] md:top-[55vh] md:right-[10vw] w-[20px] lg:w-[31px] lg:top-[30vh] lg:right-[35vh] animate-spin"
-            alt="">
+            class="absolute right-[2rem] bottom-[25dvh] md:top-[55vh] md:right-[10vw] w-[20px] lg:w-[31px] lg:top-[30vh] lg:right-[35vh] animate-spin"
+            alt="star image">
         <h1 class="header mb-[15px] lg:w-[600px] lg:mt-[5rem] mt-[3rem]">Upload your books & articles
             and let <span class="text-[#FF6128]">AI</span> do the rest
             .
@@ -33,7 +33,7 @@ function scrollToEndOfPage() {
                 students, professionals, or anyone seeking to make reading more efficient and enjoyable!
             </p>
             <div class="absolute self-center lg:top-[4rem] top-[0]">
-                <LottieAnimation class="w-[100vw] lg:h-[100vh] h-[58vh]" :animation-data="Ajao" :auto-play="true"
+                <LottieAnimation class="w-[100vw] lg:h-[100vh] h-[58dvh]" :animation-data="Ajao" :auto-play="true"
                     :loop="true" />
             </div>
         </div>
