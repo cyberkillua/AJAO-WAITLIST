@@ -26,4 +26,5 @@ body{
   background-image: url('/different-patterns.png');
   font-family: 'Geist Sans';
   overscroll-behavior-y: none;
+  overflow-x: hidden;
 }

@@ -14,6 +14,9 @@ export default {
       screens: {
         "xs": { min: "100px", max: "390px" },
       },
+      animation: {
+        'spin': 'spin 3s linear infinite',
+      }
     },
   },
   plugins: [],
