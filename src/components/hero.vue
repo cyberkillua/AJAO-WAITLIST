@@ -32,8 +32,8 @@ function scrollToEndOfPage() {
                 for
                 students, professionals, or anyone seeking to make reading more efficient and enjoyable!
             </p>
-            <div class="absolute self-center lg:top-[4rem] top-[0]">
-                <LottieAnimation class="w-[100vw] lg:h-[100vh] h-[58dvh]" :animation-data="Ajao" :auto-play="true"
+            <div class="absolute self-center lg:top-[4rem] top-[0] border">
+                <LottieAnimation class="w-[100vw] lg:h-[100vh] h-[58dvh] border" :animation-data="Ajao" :auto-play="true"
                     :loop="true" />
             </div>
         </div>
@@ -42,3 +42,10 @@ function scrollToEndOfPage() {
         </Button>
     </section>
 </template>
+
+
+<style scoped>
+.border{
+    border: 1px solid red;
+}
+</style>
